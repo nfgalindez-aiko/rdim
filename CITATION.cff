@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use rdim, please cite the software and the companion preprint below."
 title: "rdim: debiased perturbational complexity and reproducible dimensionality"
 version: 0.1.0
-date-released: 2026-08-26
+date-released: 2026-08-25
 authors:
   - family-names: Galindez
     given-names: "Nicolás"

@@ -18,7 +18,7 @@ preferred-citation:
     - family-names: Galindez
       given-names: "Nicolás"
   year: 2026
-  doi: "10.5281/zenodo.22100547"
+  doi: "10.5281/zenodo.22101483"
 references:
   - type: article
     title: "Debiased perturbational complexity peaks at the edge of chaos: reproducible response dimensionality in recurrent networks"
@@ -26,11 +26,11 @@ references:
       - family-names: Galindez
         given-names: "Nicolás"
     year: 2026
-    doi: "10.5281/zenodo.22100827"
+    doi: "10.5281/zenodo.22101631"
   - type: article
     title: "A replicated, control-passing association between resting spectral slope and TMS-evoked complexity fails blind preregistered confirmation"
     authors:
       - family-names: Galindez
         given-names: "Nicolás"
     year: 2026
-    doi: "10.5281/zenodo.22101060"
+    doi: "10.5281/zenodo.22101653"

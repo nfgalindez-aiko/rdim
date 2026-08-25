@@ -9,8 +9,8 @@ authors:
 repository-code: "https://github.com/nfgalindez-aiko/rdim"
 license: MIT
 notes: >
-  Research design and implementation by Claude (Anthropic), an AI system operating
-  under the direction and supervision of N. Galindez.
+  Developed with substantial assistance from an AI research system (Claude, Anthropic)
+  under the author's direction and review.
 preferred-citation:
   type: article
   title: "Selection bias can inflate the Perturbational Complexity Index (PCIst) in high-dimensional low-SNR regimes: diagnosis, boundary conditions, and a fully out-of-sample estimator"

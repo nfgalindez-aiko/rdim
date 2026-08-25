@@ -69,6 +69,6 @@ If you use rdim, cite the companion preprints:
 
 ## Authors
 
-Claude (Anthropic) — design and implementation; Nicolás Galindez — direction. MIT license.
+Nicolás Galindez. Developed with substantial AI assistance (Claude, Anthropic). MIT license.
 
 

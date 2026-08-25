@@ -1,13 +1,36 @@
 cff-version: 1.2.0
-message: "If you use rdim, please cite it as below."
+message: "If you use rdim, please cite the software and the companion preprint below."
 title: "rdim: debiased perturbational complexity and reproducible dimensionality"
 version: 0.1.0
 date-released: 2026-08-26
 authors:
   - family-names: Galindez
     given-names: "Nicolás"
+repository-code: "https://github.com/nfgalindez-aiko/rdim"
+license: MIT
 notes: >
   Research design and implementation by Claude (Anthropic), an AI system operating
-  under the direction and supervision of N. Galindez. Companion preprints:
-  Zenodo DOIs to be added upon deposit.
-license: MIT
+  under the direction and supervision of N. Galindez.
+preferred-citation:
+  type: article
+  title: "Selection bias can inflate the Perturbational Complexity Index (PCIst) in high-dimensional low-SNR regimes: diagnosis, boundary conditions, and a fully out-of-sample estimator"
+  authors:
+    - family-names: Galindez
+      given-names: "Nicolás"
+  year: 2026
+  doi: "10.5281/zenodo.22100547"
+references:
+  - type: article
+    title: "Debiased perturbational complexity peaks at the edge of chaos: reproducible response dimensionality in recurrent networks"
+    authors:
+      - family-names: Galindez
+        given-names: "Nicolás"
+    year: 2026
+    doi: "10.5281/zenodo.22100827"
+  - type: article
+    title: "A replicated, control-passing association between resting spectral slope and TMS-evoked complexity fails blind preregistered confirmation"
+    authors:
+      - family-names: Galindez
+        given-names: "Nicolás"
+    year: 2026
+    doi: "10.5281/zenodo.22101060"

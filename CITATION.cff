@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use rdim, please cite it as below."
+title: "rdim: debiased perturbational complexity and reproducible dimensionality"
+version: 0.1.0
+date-released: 2026-08-26
+authors:
+  - family-names: Galindez
+    given-names: "Nicolás"
+notes: >
+  Research design and implementation by Claude (Anthropic), an AI system operating
+  under the direction and supervision of N. Galindez. Companion preprints:
+  Zenodo DOIs to be added upon deposit.
+license: MIT

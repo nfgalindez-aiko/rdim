@@ -48,7 +48,7 @@ every trial's spectrum — if your effect does not clear it, you have measured y
 R-dim counts how many principal directions of the evoked response *replicate across
 independent halves of your trials* — the response's reproducible dimensionality. In 366 core
 simulated recurrent networks it is the quantity that perturbational complexity actually
-tracks (Ï = 0.74), maximal at the edge of chaos and destroyed by both order and chaos
+tracks (ρ = 0.74), maximal at the edge of chaos and destroyed by both order and chaos
 (preprint 2). It requires simultaneous sensitivity and stability — which may be why the
 brain only exhibits it awake.
 

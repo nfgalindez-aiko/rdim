@@ -34,3 +34,10 @@ references:
         given-names: "Nicolás"
     year: 2026
     doi: "10.5281/zenodo.22101653"
+  - type: article
+    title: "The reproducible dimensionality of the human intracranial evoked response grows without detectable ceiling up to 480 trials"
+    authors:
+      - family-names: Galindez
+        given-names: "Nicolás"
+    year: 2026
+    doi: "10.5281/zenodo.22120070"

@@ -52,6 +52,24 @@ seen (awake 1.39 vs isoflurane 0.93 at n=60). The amendment is justified solely 
 window-magnitude diagnostic above and applies identically to all states; the pilot remains
 excluded from all confirmatory tests.
 
+## 3c. CORRECTION A2 (implementation bug fix + technical validity rule; sealed before any
+confirmatory result was computed)
+**Bug found:** epoch extraction located each stimulus by linear arithmetic,
+sample = round((t_stim − t_first) × 2500). Recordings in this dataset can contain **gaps**
+(session sub-521887 is missing ~102 s, i.e. 255,796 samples), so after a gap this indexing
+read the EEG several seconds off target. In that session every trial was corrupted (0 valid
+trials); other sessions may have lost trials silently.
+
+**Fix:** stimulus samples are now located by search over the recording's actual timestamps,
+and each epoch is verified to be time-continuous (its span must equal the nominal epoch
+duration within 2 ms). Epochs crossing a recording gap are dropped as technically invalid —
+they cannot be epoched, the same category as the fs≤360 Hz exclusion in exp32.
+
+This is a correctness fix plus a validity rule, applied identically to all states, currents
+and sessions, and independent of any outcome. All sessions processed before the fix were
+discarded and recomputed from scratch. No confirmatory statistic had been computed at the
+time of the fix.
+
 ## 4. Trial matching (the paper-5 lesson, applied to ourselves)
 All state comparisons use matched trials within each session:
 - Restrict to current levels present in BOTH compared states.

@@ -41,3 +41,10 @@ references:
         given-names: "Nicolás"
     year: 2026
     doi: "10.5281/zenodo.22120070"
+  - type: article
+    title: "Debiased reproducible dimensionality is lower under isoflurane than in wakefulness in the same mouse brain, at matched trial counts and stimulation currents"
+    authors:
+      - family-names: Galindez
+        given-names: "Nicolás"
+    year: 2026
+    doi: "10.5281/zenodo.22133404"

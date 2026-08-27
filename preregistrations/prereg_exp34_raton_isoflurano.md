@@ -32,6 +32,26 @@ before any confirmatory computation)
 - Band-pass 1–90 Hz; 60 Hz notch (scipy iirnotch); decimation ×5 (effective 500 Hz).
 - Artifact rejection: per-trial 99.9th-percentile robust |z| > 6 (as amended in exp32).
 
+## 3b. AMENDMENT A1 (pilot stage, sealed before any confirmatory computation)
+**Change:** the artifact-rejection criterion is computed on the **baseline window only**
+(−0.4, −0.05 s), instead of over the whole epoch. Threshold unchanged (per-trial 99.9th
+percentile of robust |z| > 6, robust statistics from the baseline).
+
+**Reason (verifiable from the pilot diagnostic, independent of any effect direction):** with
+direct intracortical electrical stimulation the evoked response is *larger* than the
+stimulation artifact. In pilot sub-521885 the median-across-channels max robust |z| was 2.3
+in baseline, 10.9 in the artifact window and **13.7 in the response window**. A whole-epoch
+criterion therefore rejects trials *for having strong brain responses* (36% of trials were
+being discarded, leaving matched N=75, below the N≥120 tier). Rejecting on baseline targets
+what the criterion was meant to target — contaminated trials — and is agnostic to response
+amplitude, hence to the tested hypotheses. The threshold value and every other parameter
+are unchanged.
+
+**Disclosure:** at the time of writing this amendment the pilot's own R-dim values had been
+seen (awake 1.39 vs isoflurane 0.93 at n=60). The amendment is justified solely by the
+window-magnitude diagnostic above and applies identically to all states; the pilot remains
+excluded from all confirmatory tests.
+
 ## 4. Trial matching (the paper-5 lesson, applied to ourselves)
 All state comparisons use matched trials within each session:
 - Restrict to current levels present in BOTH compared states.

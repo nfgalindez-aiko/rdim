@@ -25,6 +25,20 @@ fewer than 30 included units are excluded (technical tier, set from the scouting
 any spike was read). Trials: EXACTLY the matched sets of preprint 6 (state- and
 current-matched, first-120 per state), regenerated with the same frozen pipeline and seeds.
 
+## 2b. AMENDMENT A1 (sealed immediately after the base protocol, BEFORE any spike was read)
+The base commit was sealed with two placeholders left unfilled by an editing error, fixed
+here with the archived scouting map (still metadata only; no spike time has been read):
+- **Pilot session:** sub-521885 is impossible as pilot (its session carries ZERO sorted
+  units — it is EEG-only). Pilot is **sub-546655** (265 units), chosen by criterion: the
+  units-bearing session with fewest units among those OUTSIDE the confirmatory tier (its
+  matched N was below preprint 6's H1 threshold), so the shakeout cannot touch the
+  confirmatory sample.
+- **Tier numbers:** 18 sessions carry >= 30 sorted units (265-995); **16 of them (15 unique
+  animals)** also belong to preprint 6's H1 tier (matched N >= 120) and form the
+  confirmatory sample; for the animal with two sessions, the session already selected by
+  preprint 6's one-session-per-animal rule is used. If fewer than 8 animals survive
+  processing, all analyses become descriptive.
+
 ## 3. Confirmatory hypotheses (α = 0.05 each; matrix fixes joint reading)
 - **Q1 (correspondence of levels):** across animals, awake R-dim_spikes correlates with the
   published awake R-dim_EEG: Spearman ≥ 0.5, one-sided p < 0.05.

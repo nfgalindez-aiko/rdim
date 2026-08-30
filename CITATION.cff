@@ -69,3 +69,10 @@ references:
         given-names: "Nicolás"
     year: 2026
     doi: "10.5281/zenodo.22168300"
+  - type: article
+    title: "The edge of chaos is the throne of time, not of richness: a sealed dissection of the field's favorite slogan"
+    authors:
+      - family-names: Galindez
+        given-names: "Nicolás"
+    year: 2026
+    doi: "10.5281/zenodo.22168819"

@@ -62,3 +62,10 @@ references:
         given-names: "Nicolás"
     year: 2026
     doi: "10.5281/zenodo.22168243"
+  - type: article
+    title: "The mechanics of the inverted-U: an exact linear theory of reproducible dimensionality, and what governs its rise and fall"
+    authors:
+      - family-names: Galindez
+        given-names: "Nicolás"
+    year: 2026
+    doi: "10.5281/zenodo.22168300"

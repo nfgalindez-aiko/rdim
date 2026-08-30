@@ -67,7 +67,7 @@ If you use rdim, cite the companion preprints:
 - Galindez, N. (2026). *Debiased perturbational complexity peaks at the edge of chaos.* Zenodo. https://doi.org/10.5281/zenodo.22101631
 - Galindez, N. (2026). *A replicated, control-passing association between resting spectral slope and TMS-evoked complexity fails blind preregistered confirmation.* Zenodo. https://doi.org/10.5281/zenodo.22101653
 - Galindez, N. (2026). *The reproducible dimensionality of the human intracranial evoked response grows without detectable ceiling up to 480 trials* Zenodo. https://doi.org/10.5281/zenodo.22120070
-- Galindez, N. (2026). *Debiased reproducible dimensionality is lower under isoflurane than in wakefulness in the same mouse brain, at matched trial counts and stimulation currents* Zenodo. https://doi.org/10.5281/zenodo.22133404) · [constraints paper](https://doi.org/10.5281/zenodo.22168191) · [field-vs-neurons paper](https://doi.org/10.5281/zenodo.22168243
+- Galindez, N. (2026). *Debiased reproducible dimensionality is lower under isoflurane than in wakefulness in the same mouse brain, at matched trial counts and stimulation currents* Zenodo. https://doi.org/10.5281/zenodo.22133404) · [constraints paper](https://doi.org/10.5281/zenodo.22168191) · [field-vs-neurons paper](https://doi.org/10.5281/zenodo.22168243) · [mechanics paper](https://doi.org/10.5281/zenodo.22168300
 
 ## Authors
 

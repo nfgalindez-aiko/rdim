@@ -48,3 +48,7 @@ references:
         given-names: "Nicolás"
     year: 2026
     doi: "10.5281/zenodo.22133404"
+  - type: doi
+    value: 10.5281/zenodo.22168191
+  - type: doi
+    value: 10.5281/zenodo.22168243

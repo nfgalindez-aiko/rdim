@@ -8,5 +8,5 @@ Quickstart:
 """
 from .core import perturbational_complexity, pcist_standard, null_floor
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 __all__ = ["perturbational_complexity", "pcist_standard", "null_floor"]

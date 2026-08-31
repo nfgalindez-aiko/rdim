@@ -32,9 +32,10 @@ from rdim import perturbational_complexity, null_floor
 r = perturbational_complexity(trials, times, baseline=(-400, -50), response=(0, 300))
 null = null_floor(trials, times, baseline=(-400, -50), response=(0, 300))
 
-print(r["xv"])                    # debiased complexity
-print(r["rdim"])                  # reproducible dimensionality of the response
-print((null >= r["xv"]).mean())   # p-value against the built-in null
+print(r["xv"])                             # debiased complexity
+print(r["rdim"])                           # reproducible dimensionality of the response
+print((null["xv"]   >= r["xv"]).mean())    # p-value against the built-in null
+print((null["rdim"] >= r["rdim"]).mean())  # ...and R-dim needs its own
 ```
 
 `trials`: array (n_trials, n_channels, n_times). That's it.
@@ -42,6 +43,33 @@ print((null >= r["xv"]).mean())   # p-value against the built-in null
 **Report rule we propose to the field:** no perturbational-complexity value without its
 paired null. `null_floor` erases the time-locking by circular trial shifts while preserving
 every trial's spectrum — if your effect does not clear it, you have measured your pipeline.
+
+**R-dim needs its null for a second reason, and this one is a property of the quantity
+itself.** R-dim sums per-component cross-half correlations *clipped at zero*, so the clip
+keeps only the positive half of the noise and R-dim has a strictly positive floor under the
+no-response null — a floor that grows with the number of retained components, i.e. with
+channel or unit count. Measured here: ≈0.2–0.5 at tens of channels, ≈2.5 for populations of
+several hundred units, and **flat in trial count**. Consequences, in one line each:
+
+* Rank statistics, growth with trials, and contrasts at matched coverage are **safe** — the
+  floor is a common additive offset.
+* **Absolute levels are not**, and neither are comparisons of level across modalities or
+  systems with different component counts. Report those against `null_floor(...)["rdim"]`.
+
+The known-truth bench in `tests/` also calibrates the other direction: with k orthogonal
+coherent directions injected, R-dim recovers k when the signal is strong (k = 3/5/10 read as
+3.13/5.11/10.10) and **under-reads monotonically as per-component SNR falls** (at SNR 0.5,
+k = 5 reads 1.76). A pure change of gain, with the repertoire untouched, therefore shows up
+as a change in R-dim. If two conditions differ in evoked amplitude, that must be reported
+alongside any R-dim difference between them.
+
+## Versions
+
+**v0.2.0** — `null_floor` now returns `{"xv": ..., "rdim": ...}` (it returned the `xv` array
+only, which made the R-dim floor unmeasurable with the published tool; pass `quantity="xv"`
+for the old shape). Adds the known-truth bench and the SNR calibration above.
+**The estimator itself is byte-for-byte unchanged from v0.1.0**, so every number in the
+papers that cite `rdim` v0.1.0 reproduces exactly under v0.2.0.
 
 ## What R-dim means
 

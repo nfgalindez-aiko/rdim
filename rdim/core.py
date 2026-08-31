@@ -131,22 +131,58 @@ def pcist_standard(evoked, times, baseline, response, **kw):
     return float(_stq_eval(a, thrs, bmask, rmask, p["k"]))
 
 
-def null_floor(trials, times, baseline, response, n_null=20, **kw):
+def null_floor(trials, times, baseline, response, n_null=20, quantity="both", **kw):
     """Null distribution of the estimator on THESE trials with the perturbation
     erased by design: for each null draw, trials are circularly time-shifted by
     random offsets (destroying time-locking to the perturbation while preserving
-    each trial's autocorrelation and spectrum). Returns the null values; report
-    your estimate together with, e.g., its percentile in this distribution."""
+    each trial's autocorrelation and spectrum). Report your estimate together
+    with, e.g., its percentile in this distribution.
+
+    IMPORTANT — both quantities need their null, for different reasons:
+
+    * ``xv`` is debiased against the baseline inside the estimator, so its null
+      sits near zero and the null mainly guards against residual time-locked
+      structure.
+    * ``rdim`` sums per-component cross-half correlations **clipped at zero**
+      (see ``perturbational_complexity``). Clipping keeps only the positive half
+      of the noise, so R-dim has a strictly positive floor under the no-response
+      null, and that floor grows with the number of retained components — i.e.
+      with channel/unit count. Order statistics (rank correlations, growth with
+      trial count, contrasts at matched coverage) are unaffected, because the
+      floor is an additive offset that is flat in trial count. **Absolute levels,
+      and comparisons of level across modalities or systems with different
+      component counts, are not**: those must be reported floor-corrected, or at
+      least alongside this null.
+
+    Parameters
+    ----------
+    quantity : {"both", "xv", "rdim"}
+        ``"both"`` (default) returns ``{"xv": array, "rdim": array}``.
+        ``"xv"`` or ``"rdim"`` return a bare array of that quantity.
+
+    Notes
+    -----
+    Before v0.2.0 this function returned the ``xv`` array only, which made the
+    R-dim floor unmeasurable with the published tool. Pass ``quantity="xv"`` for
+    the old return shape.
+    """
+    if quantity not in ("both", "xv", "rdim"):
+        raise ValueError('quantity must be "both", "xv" or "rdim"')
     p = {**DEFAULTS, **kw}
     trials = np.asarray(trials, dtype=float)
     rng = np.random.default_rng(p["seed"] + 1)
     T = trials.shape[2]
-    vals = []
+    xvs, rdims = [], []
     for j in range(n_null):
         shifted = np.stack([np.roll(t, rng.integers(T // 4, 3 * T // 4), axis=-1)
                             for t in trials])
         r = perturbational_complexity(shifted, times, baseline, response,
                                       **{**kw, "seed": p["seed"] + 100 + j})
-        vals.append(r["xv"])
-    return np.array(vals)
+        xvs.append(r["xv"])
+        rdims.append(r["rdim"])
+    if quantity == "xv":
+        return np.array(xvs)
+    if quantity == "rdim":
+        return np.array(rdims)
+    return dict(xv=np.array(xvs), rdim=np.array(rdims))
 

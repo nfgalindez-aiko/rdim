@@ -9,7 +9,7 @@ to standard PCIst, with null controls built in.
 The standard PCIst pipeline selects its SVD basis, its components and its thresholds on the
 same data it then quantifies. On high-dimensional low-SNR data this inflates the index in the
 complete absence of any response — up to values typical of wakeful human cortex (details,
-boundary conditions and human validation: Galindez 2026, doi:10.5281/zenodo.22101483). `rdim` makes every
+boundary conditions and human validation: Galindez 2026, doi:10.5281/zenodo.22100546). `rdim` makes every
 selection on half the trials and counts state transitions on the other half; the bias is gone
 by construction, at no cost in sensitivity (AUC ≥ standard in every regime tested).
 
@@ -77,7 +77,7 @@ R-dim counts how many principal directions of the evoked response *replicate acr
 independent halves of your trials* — the response's reproducible dimensionality. In 366 core
 simulated recurrent networks it is the quantity that perturbational complexity actually
 tracks (ρ = 0.74), maximal at the edge of chaos and destroyed by both order and chaos
-(doi:10.5281/zenodo.22101631). It requires simultaneous sensitivity and stability — which may be why the
+(doi:10.5281/zenodo.22100826). It requires simultaneous sensitivity and stability — which may be why the
 brain only exhibits it awake.
 
 ## Validation
@@ -91,11 +91,11 @@ suite in the project's reproducibility archive.
 
 If you use rdim, cite the companion preprints:
 
-- Galindez, N. (2026). *Selection bias can inflate the Perturbational Complexity Index (PCIst) in high-dimensional low-SNR regimes.* Zenodo. https://doi.org/10.5281/zenodo.22101483
-- Galindez, N. (2026). *Debiased perturbational complexity peaks at the edge of chaos.* Zenodo. https://doi.org/10.5281/zenodo.22101631
-- Galindez, N. (2026). *A replicated, control-passing association between resting spectral slope and TMS-evoked complexity fails blind preregistered confirmation.* Zenodo. https://doi.org/10.5281/zenodo.22101653
-- Galindez, N. (2026). *The reproducible dimensionality of the human intracranial evoked response grows without detectable ceiling up to 480 trials* Zenodo. https://doi.org/10.5281/zenodo.22120070
-- Galindez, N. (2026). *Debiased reproducible dimensionality is lower under isoflurane than in wakefulness in the same mouse brain, at matched trial counts and stimulation currents* Zenodo. https://doi.org/10.5281/zenodo.22133404) · [constraints paper](https://doi.org/10.5281/zenodo.22168191) · [field-vs-neurons paper](https://doi.org/10.5281/zenodo.22168243) · [mechanics paper](https://doi.org/10.5281/zenodo.22168299) · [throne-of-time paper](https://doi.org/10.5281/zenodo.22168819
+- Galindez, N. (2026). *Selection bias can inflate the Perturbational Complexity Index (PCIst) in high-dimensional low-SNR regimes.* Zenodo. https://doi.org/10.5281/zenodo.22100546
+- Galindez, N. (2026). *Debiased perturbational complexity peaks at the edge of chaos.* Zenodo. https://doi.org/10.5281/zenodo.22100826
+- Galindez, N. (2026). *A replicated, control-passing association between resting spectral slope and TMS-evoked complexity fails blind preregistered confirmation.* Zenodo. https://doi.org/10.5281/zenodo.22101059
+- Galindez, N. (2026). *The reproducible dimensionality of the human intracranial evoked response grows without detectable ceiling up to 480 trials* Zenodo. https://doi.org/10.5281/zenodo.22120069
+- Galindez, N. (2026). *Debiased reproducible dimensionality is lower under isoflurane than in wakefulness in the same mouse brain, at matched trial counts and stimulation currents* Zenodo. https://doi.org/10.5281/zenodo.22133403) · [constraints paper](https://doi.org/10.5281/zenodo.22168190) · [field-vs-neurons paper](https://doi.org/10.5281/zenodo.22168242) · [mechanics paper](https://doi.org/10.5281/zenodo.22168299) · [throne-of-time paper](https://doi.org/10.5281/zenodo.22168818
 
 ## Authors
 

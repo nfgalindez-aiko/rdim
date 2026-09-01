@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use rdim, please cite the software and the companion preprint below."
 title: "rdim: debiased perturbational complexity and reproducible dimensionality"
 version: 0.2.0
-date-released: 2026-08-25
+date-released: 2026-09-01
 authors:
   - family-names: Galindez
     given-names: "Nicolás"
@@ -18,7 +18,7 @@ preferred-citation:
     - family-names: Galindez
       given-names: "Nicolás"
   year: 2026
-  doi: "10.5281/zenodo.22101483"
+  doi: "10.5281/zenodo.22100546"
 references:
   - type: article
     title: "Debiased perturbational complexity peaks at the edge of chaos: reproducible response dimensionality in recurrent networks"
@@ -26,42 +26,42 @@ references:
       - family-names: Galindez
         given-names: "Nicolás"
     year: 2026
-    doi: "10.5281/zenodo.22101631"
+    doi: "10.5281/zenodo.22100826"
   - type: article
     title: "A replicated, control-passing association between resting spectral slope and TMS-evoked complexity fails blind preregistered confirmation"
     authors:
       - family-names: Galindez
         given-names: "Nicolás"
     year: 2026
-    doi: "10.5281/zenodo.22101653"
+    doi: "10.5281/zenodo.22101059"
   - type: article
     title: "The reproducible dimensionality of the human intracranial evoked response grows without detectable ceiling up to 480 trials"
     authors:
       - family-names: Galindez
         given-names: "Nicolás"
     year: 2026
-    doi: "10.5281/zenodo.22120070"
+    doi: "10.5281/zenodo.22120069"
   - type: article
     title: "Debiased reproducible dimensionality is lower under isoflurane than in wakefulness in the same mouse brain, at matched trial counts and stimulation currents"
     authors:
       - family-names: Galindez
         given-names: "Nicolás"
     year: 2026
-    doi: "10.5281/zenodo.22133404"
+    doi: "10.5281/zenodo.22133403"
   - type: article
     title: "What must a theory of perturbational complexity explain? Nine preregistration-hardened constraints, six dead hypotheses, and a minimal visibility account"
     authors:
       - family-names: Galindez
         given-names: "Nicolás"
     year: 2026
-    doi: "10.5281/zenodo.22168191"
+    doi: "10.5281/zenodo.22168190"
   - type: article
-    title: "Field-level perturbational complexity tracks neuronal reproducible dimensionality within brains, not across them"
+    title: "Field-level perturbational complexity is not a proxy for neuronal reproducible dimensionality; its within-brain state changes co-vary in direction"
     authors:
       - family-names: Galindez
         given-names: "Nicolás"
     year: 2026
-    doi: "10.5281/zenodo.22168243"
+    doi: "10.5281/zenodo.22168242"
   - type: article
     title: "The mechanics of the inverted-U: an exact linear theory of reproducible dimensionality, and what governs its rise and fall"
     authors:
@@ -75,4 +75,18 @@ references:
       - family-names: Galindez
         given-names: "Nicolás"
     year: 2026
-    doi: "10.5281/zenodo.22168819"
+    doi: "10.5281/zenodo.22168818"
+  - type: article
+    title: "The lifetime of the coherent response: sealed laws of its rise, its peak, and its fall"
+    authors:
+      - family-names: Galindez
+        given-names: "Nicolás"
+    year: 2026
+    doi: "10.5281/zenodo.22238034"
+  - type: article
+    title: "What an adversarial audit of a preregistered program finds: nine corrections across ten preprints, and the four gaps that produced them"
+    authors:
+      - family-names: Galindez
+        given-names: "Nicolás"
+    year: 2026
+    doi: "10.5281/zenodo.22238488"

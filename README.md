@@ -98,7 +98,7 @@ the **concept DOI** below: it resolves to the latest version of each preprint.
 4. Galindez N (2026). *What must a theory of perturbational complexity explain?* Zenodo. https://doi.org/10.5281/zenodo.22168190
 5. Galindez N (2026). *The reproducible dimensionality of the human intracranial evoked response grows without detectable ceiling up to 480 trials.* Zenodo. https://doi.org/10.5281/zenodo.22120069
 6. Galindez N (2026). *Debiased reproducible dimensionality is lower under isoflurane than in wakefulness in the same mouse brain, at matched trial counts and stimulation currents.* Zenodo. https://doi.org/10.5281/zenodo.22133403
-7. Galindez N (2026). *Field-level perturbational complexity tracks neuronal reproducible dimensionality within brains.* Zenodo. https://doi.org/10.5281/zenodo.22168242
+7. Galindez N (2026). *Field-level perturbational complexity is not a proxy for neuronal reproducible dimensionality; its within-brain state changes co-vary in direction.* Zenodo. https://doi.org/10.5281/zenodo.22168242
 8. Galindez N (2026). *The mechanics of the inverted-U: an exact linear theory of reproducible dimensionality, and what governs its rise and fall.* Zenodo. https://doi.org/10.5281/zenodo.22168299
 9. Galindez N (2026). *The edge of chaos is the throne of time, not of richness.* Zenodo. https://doi.org/10.5281/zenodo.22168818
 10. Galindez N (2026). *The lifetime of the coherent response: sealed laws of its rise, its peak, and its fall.* Zenodo. https://doi.org/10.5281/zenodo.22238034

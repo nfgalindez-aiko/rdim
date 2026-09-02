@@ -57,7 +57,7 @@ references:
     year: 2026
     doi: "10.5281/zenodo.22168190"
   - type: article
-    title: "Field-level perturbational complexity tracks neuronal reproducible dimensionality within brains"
+    title: "Field-level perturbational complexity is not a proxy for neuronal reproducible dimensionality; its within-brain state changes co-vary in direction"
     authors:
       - family-names: Galindez
         given-names: "Nicolás"

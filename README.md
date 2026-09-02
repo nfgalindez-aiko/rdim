@@ -89,16 +89,23 @@ suite in the project's reproducibility archive.
 
 ## Cite
 
-If you use rdim, cite the companion preprints:
+If you use rdim, cite the software (CITATION.cff) and the companion preprints. Always use
+the **concept DOI** below: it resolves to the latest version of each preprint.
 
-- Galindez, N. (2026). *Selection bias can inflate the Perturbational Complexity Index (PCIst) in high-dimensional low-SNR regimes.* Zenodo. https://doi.org/10.5281/zenodo.22100546
-- Galindez, N. (2026). *Debiased perturbational complexity peaks at the edge of chaos.* Zenodo. https://doi.org/10.5281/zenodo.22100826
-- Galindez, N. (2026). *A replicated, control-passing association between resting spectral slope and TMS-evoked complexity fails blind preregistered confirmation.* Zenodo. https://doi.org/10.5281/zenodo.22101059
-- Galindez, N. (2026). *The reproducible dimensionality of the human intracranial evoked response grows without detectable ceiling up to 480 trials* Zenodo. https://doi.org/10.5281/zenodo.22120069
-- Galindez, N. (2026). *Debiased reproducible dimensionality is lower under isoflurane than in wakefulness in the same mouse brain, at matched trial counts and stimulation currents* Zenodo. https://doi.org/10.5281/zenodo.22133403) · [constraints paper](https://doi.org/10.5281/zenodo.22168190) · [field-vs-neurons paper](https://doi.org/10.5281/zenodo.22168242) · [mechanics paper](https://doi.org/10.5281/zenodo.22168299) · [throne-of-time paper](https://doi.org/10.5281/zenodo.22168818
+1. Galindez N (2026). *Selection bias can inflate the Perturbational Complexity Index (PCIst) in high-dimensional low-SNR regimes.* Zenodo. https://doi.org/10.5281/zenodo.22100546
+2. Galindez N (2026). *Debiased perturbational complexity peaks at the edge of chaos.* Zenodo. https://doi.org/10.5281/zenodo.22100826
+3. Galindez N (2026). *A replicated, control-passing association between resting spectral slope and TMS-evoked complexity fails blind preregistered confirmation.* Zenodo. https://doi.org/10.5281/zenodo.22101059
+4. Galindez N (2026). *What must a theory of perturbational complexity explain?* Zenodo. https://doi.org/10.5281/zenodo.22168190
+5. Galindez N (2026). *The reproducible dimensionality of the human intracranial evoked response grows without detectable ceiling up to 480 trials.* Zenodo. https://doi.org/10.5281/zenodo.22120069
+6. Galindez N (2026). *Debiased reproducible dimensionality is lower under isoflurane than in wakefulness in the same mouse brain, at matched trial counts and stimulation currents.* Zenodo. https://doi.org/10.5281/zenodo.22133403
+7. Galindez N (2026). *Field-level perturbational complexity tracks neuronal reproducible dimensionality within brains.* Zenodo. https://doi.org/10.5281/zenodo.22168242
+8. Galindez N (2026). *The mechanics of the inverted-U: an exact linear theory of reproducible dimensionality, and what governs its rise and fall.* Zenodo. https://doi.org/10.5281/zenodo.22168299
+9. Galindez N (2026). *The edge of chaos is the throne of time, not of richness.* Zenodo. https://doi.org/10.5281/zenodo.22168818
+10. Galindez N (2026). *The lifetime of the coherent response: sealed laws of its rise, its peak, and its fall.* Zenodo. https://doi.org/10.5281/zenodo.22238034
+11. Galindez N (2026). *What an adversarial audit of a preregistered program finds.* Zenodo. https://doi.org/10.5281/zenodo.22240037
 
 ## Authors
 
-Nicolás Galindez. Developed with substantial AI assistance (Claude, Anthropic). MIT license.
+Nicolás Galindez (ORCID 0009-0000-8207-0536). Developed with substantial AI assistance (Claude, Anthropic) under the author's direction and review. MIT license (see LICENSE).
 
 

@@ -6,6 +6,7 @@ date-released: 2026-09-01
 authors:
   - family-names: Galindez
     given-names: "Nicolás"
+    orcid: "https://orcid.org/0009-0000-8207-0536"
 repository-code: "https://github.com/nfgalindez-aiko/rdim"
 license: MIT
 notes: >
@@ -56,7 +57,7 @@ references:
     year: 2026
     doi: "10.5281/zenodo.22168190"
   - type: article
-    title: "Field-level perturbational complexity is not a proxy for neuronal reproducible dimensionality; its within-brain state changes co-vary in direction"
+    title: "Field-level perturbational complexity tracks neuronal reproducible dimensionality within brains"
     authors:
       - family-names: Galindez
         given-names: "Nicolás"

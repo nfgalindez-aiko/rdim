@@ -2,6 +2,14 @@
 
 # Revisión adversarial del sello 74b5407 (exp61b — ley de decaimiento caótico)
 
+> **Erratum (02/09/2026).** El ataque 1 de este informe repite la afirmación del
+> sello de que el techo +0.976 se midió "sobre una población que abarca orden→caos
+> (T_c de 3 a 300)". Es falsa: `entrenamiento61.py` toma diez redes con λ entre
+> 0.007 y 0.029, todas caóticas, T_c 24–188. Recomputado con la red exacta el techo
+> es +0.952 (`techo61.jsonl`). La conclusión del ataque (el techo del dominio del
+> claim, hasta λ = 0.26, es +0.103 sin compuerta) no cambia. Este informe aceptó la
+> frase sin abrir el script: es el punto ciego que la auditoría del 02/09 nombra.
+
 **Naturaleza de este documento.** Es el paso 3 de la regla del sello (revisión
 adversarial, por defecto ROTO). Se ejecutó **retrospectivamente**: la regla nació
 el 30/08/2026 después de que este sello se commiteara y corriera. El commit
